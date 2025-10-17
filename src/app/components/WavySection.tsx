@@ -18,7 +18,7 @@ const WavySection: React.FC = () => {
       {/* Content */}
       <div className="relative z-10 text-white flex flex-col gap-8 items-center justify-center w-full max-w-6xl px-4 py-12">
         <h2 className="text-4xl tracking-wider font-bold mb-8 text-center">
-          PROJECTS
+          JOGOS
         </h2>
 
         {/* Cards container */}

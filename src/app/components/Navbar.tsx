@@ -37,8 +37,8 @@ export default function Navbar() {
         {/* Navbar Links (Desktop) */}
         <ul className="hidden md:flex gap-8 text-lg font-medium">
           <li><a href="/" className="nav-link">Home</a></li>
-          <li><a href="/shop" className="nav-link">Projects</a></li>
-          <li><a href="/about" className="nav-link">About</a></li>
+          <li><a href="/shop" className="nav-link">Jogos</a></li>
+          <li><a href="/about" className="nav-link">Videos</a></li>
           <li><a href="/contact" className="nav-link">Contact</a></li>
         </ul>
 
