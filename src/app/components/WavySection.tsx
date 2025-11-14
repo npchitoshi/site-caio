@@ -7,7 +7,7 @@ const WavySection: React.FC = () => {
   const [openVideo, setOpenVideo] = useState(false);
 
   return (
-    <section className="relative w-full min-h-screen lg:h-screen flex justify-center items-center overflow-hidden">
+    <section id="jogos" className="relative w-full min-h-screen lg:h-screen flex justify-center items-center overflow-hidden">
       {/* Waves */}
       <div className="wave absolute inset-0 w-full h-full">
         <span></span>
@@ -101,6 +101,15 @@ const WavySection: React.FC = () => {
                 A brief description of the fourth project. Keep it concise and clear.
               </p>
             </div>
+          </a>
+        </div>
+
+        <div className="w-full flex justify-center mt-8">
+          <a
+            href="/outra-pagina"
+            className="px-6 py-3 bg-[#B71C1C] hover:bg-[#F44336] text-white text-lg font-semibold rounded-xl shadow-lg transition"
+          >
+            Ver todos os jogos
           </a>
         </div>
       </div>

@@ -1,6 +1,9 @@
 @import "tailwindcss";
 
-/* Custom classes from your HTML */
+html {
+  scroll-behavior: smooth;
+}
+
 .glass-effect {
   background: black;
   backdrop-filter: blur(10px);
