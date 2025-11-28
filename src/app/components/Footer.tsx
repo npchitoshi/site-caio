@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FaInstagram, FaWhatsapp, FaTelegramPlane } from "react-icons/fa";
 
 const Footer: React.FC = () => {
   return (
@@ -12,22 +12,34 @@ const Footer: React.FC = () => {
         <div className="mb-6 md:mb-0">
           <h2 className="text-xl font-bold">Caio Vidal</h2>
           <p className="text-gray-300">caio.vidalnascimento@gmail.com</p>
+          <p className="text-gray-300">+55 41 99742-1848</p>
           <p className="text-gray-300">Curitiba-PR, Brazil</p>
         </div>
 
         {/* Redes sociais */}
         <div className="flex space-x-4">
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-red-400 transition-colors">
-            <FaInstagram size={24} />
+          <a href="https://instagram.com" target="_blank" 
+            rel="noopener noreferrer" 
+            className="hover:text-red-400 transition-colors">
+            <FaInstagram size={34} />
           </a>
 
           <a
             href="https://wa.me/5541999999999" // substitua pelo seu número com DDI e DDD
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-green-500 transition-colors"
+            className="hover:text-red-400 transition-colors"
           >
-            <FaWhatsapp size={24} />
+            <FaWhatsapp size={34} />
+          </a>
+
+          <a
+            href="https://t.me/seuUsuarioTelegram"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-red-400 transition-colors"
+          >
+            <FaTelegramPlane size={34} />
           </a>
         </div>
       </div>

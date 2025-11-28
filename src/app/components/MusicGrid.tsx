@@ -6,7 +6,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper/modules";
-import "../MusicGrid.css"; //
+import "../MusicGrid.css";
 
 const MusicGrid: React.FC = () => {
   const cards = [
@@ -36,7 +36,17 @@ const MusicGrid: React.FC = () => {
 
   return (
     <div className="musicgrid-container">
-      <h1 className="musicgrid-title">Estilos Musicais</h1>
+
+    <div className="musicgrid-artist-section">
+      <div className="musicgrid-artist-content no-image">
+        <h2 className="musicgrid-artist-title">Musical Styles</h2>
+        <p className="text-lg leading-relaxed opacity-90">
+          I’m fully prepared to create music in any style, exploring different rhythms, 
+          moods, and atmospheres with ease. Feel free to click on the audio samples below 
+          to explore each genre and discover the versatility of my sound.
+        </p>
+      </div>
+    </div>
 
       <div className="musicgrid-wrapper">
         <Swiper
@@ -61,10 +71,7 @@ const MusicGrid: React.FC = () => {
                 <div className="musicgrid-image-wrapper">
                   <img className="musicgrid-image" src={card.img} alt={card.title} />
 
-                  <button
-                    onClick={() => togglePlay(idx)}
-                    className="musicgrid-play-btn"
-                  >
+                  <button onClick={() => togglePlay(idx)} className="musicgrid-play-btn">
                     {playingIndex === idx ? (
                       <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" viewBox="0 0 16 16">
                         <path d="M5.5 3.5h1v9h-1v-9zm4 0h1v9h-1v-9z" />

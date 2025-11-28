@@ -26,7 +26,7 @@ export default function Navbar() {
             alt="Logo"
             width={100}
             height={100}
-            className="h-10 sm:h-12 md:h-16 lg:h-20 xl:h-24 w-auto transition-all duration-300 group-hover:scale-110"
+            className="h-10 sm:h-12 md:h-16 lg:h-20 xl:h-22 w-auto rounded-full bg-white p-1 transition-all duration-300"
             sizes="(max-width: 640px) 2.5rem, 
                   (max-width: 768px) 3rem, 
                   (max-width: 1024px) 4rem, 
@@ -36,9 +36,9 @@ export default function Navbar() {
         </a>
 
           {/* Navbar Links (Desktop) */}
-          <ul className="hidden md:flex gap-8 text-lg font-medium">
+          <ul className="hidden md:flex gap-8 text-xl font-medium absolute left-1/2 -translate-x-1/2">
             <li><a href="#home" className="nav-link">Home</a></li>
-            <li><a href="#jogos" className="nav-link">Jogos</a></li>
+            <li><a href="#games" className="nav-link">Games</a></li>
             <li><a href="#videos" className="nav-link">Videos</a></li>
             <li><a href="#contact" className="nav-link">Contact</a></li>
           </ul>
@@ -46,7 +46,9 @@ export default function Navbar() {
           {/* Actions */}
           <div className="flex items-center gap-5">
             <i className="fa-solid fa-circle-user text-2xl lg:text-3xl cursor-pointer user-icon"></i>
-            <button className="hidden md:flex btn-gradient text-lg px-6 py-2 rounded-full font-semibold">Veja Todos Projetos</button>
+            <button className="hidden md:flex btn-primary rounded-full">
+              ALL PROJECTS
+            </button>
             <button className="md:hidden cursor-pointer" onClick={toggleMenu}>
               <span className={`hamburger-line ${menuOpen ? "hamburger-active" : ""}`}></span>
               <span className={`hamburger-line ${menuOpen ? "hamburger-active" : ""}`}></span>

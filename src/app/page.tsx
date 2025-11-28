@@ -2,9 +2,9 @@ import Image from "next/image";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import VideoBackground from "./components/VideoBackground"; 
-import WhatsappButton from "./components/WhatsappButton"; 
 import WavySection from "./components/WavySection";
 import MusicGrid from "./components/MusicGrid";
+import VideosSection from "./components/VideosSection";
 
 export default function Home() {
   return <>
@@ -15,6 +15,7 @@ export default function Home() {
           <MusicGrid />
         </VideoBackground>
       <WavySection />
+      <VideosSection />
     </main>
     <Footer/>
     {/* <WhatsappButton /> */}
